@@ -29,4 +29,4 @@ app.get('/', (req, res) => {
     res.send('Hello gan');
   });
 
-app.listen(2000, () => console.log("server berjalan pada http://localhost:2000"))
+app.listen(process.env.PORT || 2000, () => console.log("server berjalan pada http://localhost:2000"))
