@@ -6,7 +6,8 @@
     "heroku"
   ],
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
