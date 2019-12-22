@@ -1,9 +1,9 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'fml'
+  host     : 'udidesain.com',
+  user     : 'rudi',
+  password : 'asEp@rUdi08',
+  database : 'db_fml'
 });
  
 connection.connect(function(error){
