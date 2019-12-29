@@ -26,7 +26,7 @@ app.use('/api',transaksi);
 
 // say helo
 app.get('/', (req, res) => { 
-    res.send('Hello gan');
+    res.send('Hello gays');
   });
 
 app.listen(process.env.PORT || 2000, () => console.log("server berjalan pada http://localhost:2000"))
