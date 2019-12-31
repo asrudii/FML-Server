@@ -24,7 +24,7 @@ app.use('/api',makanan);
 app.use('/api',minuman);
 app.use('/api',transaksi);
 
-// say helo
+// say helooo
 app.get('/', (req, res) => { 
     res.send('Hello gays');
   });
