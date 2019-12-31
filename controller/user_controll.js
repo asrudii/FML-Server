@@ -23,15 +23,17 @@ router.get('/user', function(req, res){
 // Register
 router.post('/register', function(req, res) {
 
-    var sql ="INSERT INTO user ( id_user, user_name, email, password, telp) VALUES ? ";
+    var sql ="INSERT INTO user ( id_user, user_name, email, password, image, telp) VALUES ? ";
 
     const iduser = '91812'
+    const gambar = '-'
     const data = [
         [   
             iduser,
             req.body.username,
             req.body.email, 
             req.body.password,
+            gambar,
             req.body.telp
         ]
     ];    
