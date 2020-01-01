@@ -20,7 +20,7 @@ router.get('/user', function(req, res){
 
 
 
-// Register
+// Registerrr
 router.post('/register', function(req, res) {
 
     var sql ="INSERT INTO user ( user_name, email, password, image, telp) VALUES ? ";
