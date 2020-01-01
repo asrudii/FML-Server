@@ -58,7 +58,6 @@ router.get('/userlogin', function(req, res){
         res.json(results);
         res.end();
     });
-    
 });
 
 // login
