@@ -77,7 +77,7 @@ router.post('/login', function(req, res) {
             if(results[0].password == password){
                 const payload = {
                     _id: results[0].id_user,
-                    username: results[0].username,
+                    username: results[0].user_name,
                     email: results[0].email,
                     telp: results[0].telp,
                 }
