@@ -1,6 +1,6 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'http://udidesain.com/',
+  host     : 'udidesain.com',
   user     : 'rudi',
   password : 'asEp@rUdi08',
   database : 'db_fml'
