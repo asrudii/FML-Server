@@ -25,6 +25,7 @@ router.post('/register', function(req, res) {
 
     var sql ="INSERT INTO user ( user_name, email, password, image, telp) VALUES ? ";
 
+    
     const gambar = '-'
     const data = [
         [   
@@ -48,6 +49,7 @@ router.post('/register', function(req, res) {
 });
 
 
+// datauser
 router.get('/userlogin', function(req, res){
     var decoded = jwt.verify(req.header['authorization'], 'asepGanteng');
     var _id = decoded._id;
@@ -77,6 +79,7 @@ router.post('/login', function(req, res) {
                     _id: results[0].id_user,
                     username: results[0].username,
                     email: results[0].email,
+                    telp: results[0].telp,
                 }
                 let token = jwt.sign(payload, 'asepGanteng', {
                     expiresIn: 1440
