@@ -72,7 +72,7 @@ router.post('/login', function(req, res) {
             "failed":"error ocurred"
           })
         }else{
-          // console.log('The solution is: ', result),aas//
+          // console.log('The solution is: ', result),aas//s
           if(results.length >0){
             if(results[0].password == password){
                 const payload = {
