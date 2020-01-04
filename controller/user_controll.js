@@ -49,7 +49,7 @@ router.post('/register', function(req, res) {
 });
 
 
-// datauser
+// datausers
 router.get('/userlogin', function(req, res){
     var decoded = jwt.verify(req.header['authorization'], 'asepGanteng');
     var _id = decoded._id;
